@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lima</title>
+    <link rel="shortcut icon" href="imagenes/icons8-favicon-48.png">
+
+    <style>
+        main {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "article article"
+                "footer footer";
+            grid-template-columns: 1fr 2fr;
+        }
+
+        header {
+            text-align: center;
+            font-size: 25px;
+            grid-area: header;
+        }
+
+        nav {
+            font-weight: bold;
+            grid-area: nav;
+        }
+
+        aside {
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            grid-area: aside;
+        }
+
+        article {
+            grid-area: article;
+        }
+
+        footer {
+            border: 1px solid rgb(17, 4, 70);
+            background-color: #67d1e914;
+            text-align: center;
+            font-size: 15px;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 style="color: rgb(6, 6, 104)">Lima</h1>
+            <img src="imagenes\Lima.jpg"  height="550px" width="1500px"/>
+        </header>
+        <nav><a href="index.html">Regresar al inicio</a></nav>
+        <article>
+            <h2 style="color: rgb(6, 6, 104)">Descubre la magia de Lima</h2>
+            <p>Sumérgete en la vibrante mezcla de historia, cultura y gastronomía que ofrece Lima, la capital de Perú.
+                Situada a orillas del océano Pacífico, esta metrópolis cosmopolita te cautivará con su encanto único y sus numerosas facetas.
+                Lima es una ciudad llena de contrastes, donde lo antiguo y lo moderno se entrelazan de manera fascinante. 
+            </p>
+            <h2 style="color: rgb(6, 6, 104)" >Atractivos turísticos:</h2>
+            <ul>
+            <li>Centro Histórico de Lima</li> 
+            <li>Malecón de Miraflores</li> 
+            <li>Barranco: Arte y Bohemia</li> 
+            <li>Playas de la Costa Verde</li> 
+            <li>Parque de las Leyendas</li> 
+            </ul>
+
+            
+            <h3 style="color: rgb(6, 6, 104)">Itinerario de 5 días y 4 noches</h3>
+            <ul>
+                <li>Día 1: Tour por el Centro Histórico de Lima y degustación de gastronomía peruana en el Mercado de Surquillo.</li>
+                <li>Día 2: Visita al Museo Larco y paseo por el Parque Kennedy en Miraflores.</li>
+                <li>Día 3: Excursión a la Huaca Pucllana y tarde de relajación en las playas de la Costa Verde.</li>
+                <li>Día 4: Exploración del Barranco bohemio y cena en un restaurante típico.</li>
+                <li>Día 5: Tiempo libre para compras y despedida de Lima.</li>
+            </ul>
+            <h3 style="color: rgb(6, 6, 104)">Costos de este plan:</h3>
+            <ul>
+                <li>Traslados: $10-20 por trayecto en transporte público.</li>
+                <li>Hospedaje: $50-100 por noche en un hotel de gama media.</li>
+                <li>Entradas a sitios turísticos: $15-30 por persona en promedio.</li>
+                <li>Comidas: $10-30 por comida en restaurantes locales.</li>
+                <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
+            </ul>
+
+            <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
+
+            <section>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/J24cDO0n5rg?si=MHzXi19BatKxtlgi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+        </article>
+        <footer>
+            <b>Sitio Agencia Travel Partner desarrollado por:</b> Salomé Garcés.<br>
+            <b>Contacto:</b> msalome.garces@udea.edu.co
+        </footer>
+    </main>
+
+</body>
+</html>

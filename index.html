@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Partners</title>
+    <link rel="shortcut icon" href="imagenes/icons8-favicon-48.png">
+
+    <style>
+        main {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "article article"
+                "nav nav"
+                "footer footer";
+            grid-template-columns: 1fr 2fr;
+        }
+
+        header {
+            border: 1px solid black;
+            text-align: center;
+            background-color: #67d1e92f;
+            font-size: 25px;
+            grid-area: header;
+        }
+
+        nav {
+            font-weight: bold;
+            grid-area: nav;
+        }
+
+        aside {
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            grid-area: aside;
+        }
+
+        article {
+            grid-area: article;
+        }
+
+        footer {
+            border: 1px solid rgb(17, 4, 70);
+            background-color: #67d1e914;
+            text-align: center;
+            font-size: 15px;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 style="color: rgb(6, 6, 104)"">TRAVEL PARTNERS</h1>
+            <img src="imagenes\turismo.jpg"  height="550px" width="1500px"/>
+        </header>
+        <article>
+            <h2 style="color: rgb(11, 11, 144)">Acerca de nosotros</h2>
+            <p>En <b>Travel Partners</b>, creemos que cada viaje es una oportunidad para descubrir, 
+                explorar y conectar con el mundo que nos rodea. Desde majestuosas montañas hasta exuberantes selvas tropicales, 
+                desde modernas ciudades hasta las más bellas playas, nuestro objetivo es brindarte experiencias inolvidables 
+                que enriquezcan tu vida y te dejen con recuerdos que perdurarán para siempre.</p>
+        </article>
+        <nav>
+                <h3 style="color: rgb(11, 11, 144)">Destinos disponibles:</h3>
+            <ul>
+                <li>Lima</li>
+                <a href="lima.html" target="_blank"> <img src="imagenes\Lima.jpg" height="200px" width="200px"/></a>
+                <li>Cancún</li>
+                <a href="cancun.html" target="_blank"> <img src="imagenes\Cancun.jpg" height="200px" width="200px"/></a>
+                <li>Paris</li>
+                <a href="paris.html" target="_blank"> <img src="imagenes\Paris.jpg" height="200px" width="200px"/></a>
+                <li>Roma</li>
+                <a href="roma.html" target="_blank"> <img src="imagenes\Roma.jpg" height="200px" width="200px"/></a>
+                <li>New York</li>
+                <a href="ny.html" target="_blank"> <img src="imagenes\NYC.jpg" height="200px" width="200px"/></a>
+                <li>Cartagena</li>
+                <a href="cartagena.html" target="_blank"> <img src="imagenes\Cartagena.jpg" height="200px" width="200px"/></a>
+            </ul>
+     </nav>
+
+        <footer>
+            <b>Sitio Agencia Travel Partner desarrollado por:</b> Salomé Garcés.<br>
+            <b>Contacto:</b> msalome.garces@udea.edu.co
+        </footer>
+    </main>
+</body>
+</html>

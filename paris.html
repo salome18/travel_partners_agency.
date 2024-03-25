@@ -5,98 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paris</title>
     <link rel="shortcut icon" href="imagenes/icons8-favicon-48.png">
-
-    <style>
-        main {
-            display: grid;
-            grid-template-areas:
-                "header header"
-                "nav nav"
-                "article article"
-                "footer footer";
-            grid-template-columns: 1fr 2fr;
-        }
-
-        header {
-            text-align: center;
-            font-size: 25px;
-            grid-area: header;
-        }
-
-        nav {
-            font-weight: bold;
-            grid-area: nav;
-        }
-
-        aside {
-            border: 2px solid black;
-            text-align: center;
-            font-weight: bold;
-            grid-area: aside;
-        }
-
-        article {
-            grid-area: article;
-        }
-
-        footer {
-            border: 1px solid rgb(17, 4, 70);
-            background-color: #67d1e914;
-            text-align: center;
-            font-size: 15px;
-            grid-area: footer;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesindex.css">
 </head>
 <body>
     <main>
         <header>
-            <h1 style="color: rgb(6, 6, 104)">Paris</h1>
-            <img src="imagenes\Paris.jpg"  height="550px" width="1500px"/>
+            <div class="cabecero">
+             <h1 id="tituloaux">París</h1>
+                <img id="imageninicial" src="imagenes\Paris.jpg"/>
+                <nav> 
+                    <a id="c_inicio" href="index.html#titulo">Inicio</a>
+                    <a id="c_acercade" href="index.html#acercade">Acerca de</a>
+                    <a id="c_destinos"href="index.html#destinos">Destinos</a>
+                </nav>
+            </div>
         </header>
-        <nav><a href="index.html" >Regresar al inicio</a></nav>
+
+        <aside>
+            <nav class="navlateral">
+                <a id="l_costos"href="paris.html#costos">Costos</a>
+                <a id="l_itinerario"href="paris.html#itinerario">Itinerario</a>
+                <a id="l_atractivo" href="paris.html#atractivos">Atractivos</a>
+                <a id="l_descubre" href="paris.html#descubre">Descubre</a>
+               
+             
+            </nav>
+        </aside>
+
+
         <article>
-            <h2 style="color: rgb(6, 6, 104)">Descubre la magia de Paris</h2>
-            <p>Bienvenido a París, la capital de Francia y uno de los destinos más románticos y culturalmente ricos del mundo.
-            Conocida como la "Ciudad de la Luz", París cautiva a sus visitantes con su arquitectura icónica,
-                su exquisita gastronomía y su rica historia que se refleja en cada rincón de la ciudad.
-            </p>
-            <h2 style="color: rgb(6, 6, 104)" >Atractivos turísticos:</h2>
-            <ul>
-            <li>Torre Eiffel: Icono emblemático de París con impresionantes vistas panorámicas.</li> 
-            <li>Museo del Louvre: Hogar de algunas de las obras de arte más famosas del mundo.</li> 
-            <li>Catedral de Notre-Dame: Joya gótica con impresionantes vitrales y arquitectura medieval..</li> 
-            <li>Jardines de Luxemburgo: Parque tranquilo con fuentes, estanques y hermosos jardines.</li> 
-            <li>Campos Elíseos: Avenida emblemática con tiendas de lujo, cafés y el Arco de Triunfo.</li> 
-            </ul>
+            <section class="aboutus">
+                <h2 id="descubre">Descubre la magia de París</h2>
+                <p>
+                    
+Bienvenido a París, la majestuosa capital de Francia y uno de los destinos más románticos y culturalmente ricos del mundo. Conocida como la "Ciudad de la Luz", París deslumbra a sus visitantes con su arquitectura icónica, sus encantadoras calles empedradas y su exquisita gastronomía que deleita los sentidos. Desde la imponente Torre Eiffel hasta la magnífica Catedral de Notre-Dame, cada rincón de esta ciudad rebosa de historia y belleza. Déjate seducir por el encanto de Montmartre, pasea por las elegantes avenidas de los Campos Elíseos y maravíllate con las obras maestras en el Louvre. En París, cada esquina cuenta una historia y cada experiencia es una oportunidad para sumergirse en la rica cultura y el romance que impregnan el aire.
+                </p>
+            </section>
 
-            <h3 style="color: rgb(6, 6, 104)">Itinerario de 5 días y 4 noches</h3>
-            <ul>
-                <li>Día 1: Visita a la Torre Eiffel y paseo por los Campos Elíseos.</li>
-                <li>Día 2: Exploración del Louvre y paseo en barco por el Sena.</li>
-                <li>Día 3: Tour por la Catedral de Notre-Dame y el Barrio Latino.</li>
-                <li>Día 4: Excursión al Palacio de Versalles y sus jardines.</li>
-                <li>Día 5: Tiempo libre para compras y despedida de París.</li>
-            </ul>
-            <h3 style="color: rgb(6, 6, 104)">Costos de este plan:</h3>
-            <ul>
-                <li>Traslados: $20-40 por trayecto en transporte público.</li>
-                <li>Hospedaje: $100-200 por noche en un hotel de gama media.</li>
-                <li>Entradas a sitios turísticos: $15-30 por persona en promedio.</li>
-                <li>Comidas: $20-40 por comida en restaurantes locales.</li>
-                <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
-            </ul>
+            <section class="listas">
+                <h2 id="atractivos" >Atractivos turísticos:</h2>
+                <ul>
+                    <li>Torre Eiffel: Icono emblemático de París con impresionantes vistas panorámicas.</li> 
+                    <li>Museo del Louvre: Hogar de algunas de las obras de arte más famosas del mundo.</li> 
+                    <li>Catedral de Notre-Dame: Joya gótica con impresionantes vitrales y arquitectura medieval.</li> 
+                    <li>Jardines de Luxemburgo: Parque tranquilo con fuentes, estanques y hermosos jardines.</li> 
+                    <li>Campos Elíseos: Avenida emblemática con tiendas de lujo, cafés y el Arco de Triunfo.</li> 
+                </ul>
+            </section>
 
-            <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
+            
+            <section class="listas">
+                <h2 id="atractivos">Atractivos turísticos:</h2>
+                
+                <div class="lugares">
+                    <div class="contenedor-img img1">
+                        <img src="imagenes/eiffeltower.jpg" alt="Lima">
+                        <div class="textos">Torre Eiffel:<br> Icono emblemático de París con impresionantes vistas panorámicas.</div>
+                    </div>
+                    <div class="contenedor-img img2">
+                        <img src="imagenes/louvre.jpg" alt="Lima">
+                        <div class="textos">Museo del Louvre:<br> Hogar de algunas de las obras de arte más famosas del mundo.</div>
+                    </div>
+                    <div class="contenedor-img img3">
+                        <img src="imagenes/notredame.jpg" alt="Lima">
+                        <div class="textos">Catedral de Notre-Dame:<br> Joya gótica con impresionantes vitrales y arquitectura medieval..</div>
+                    </div>
+                    <div class="contenedor-img img4">
+                        <img src="imagenes/luxemburgo.jpg" alt="Lima">
+                        <div class="textos">Jardines de Luxemburgo:<br> Parque tranquilo con fuentes, estanques y hermosos jardines.</div>
+                    </div>
+                    <div class="contenedor-img img5">
+                        <img src="imagenes/eliseos.jpg" alt="Lima">
+                        <div class="textos">Campos Elíseos:<br> Avenida emblemática con tiendas de lujo, cafés y el Arco de Triunfo.</div>
+                    </div>             
+                </div>
+            </section>
+
+
+            <section class="listas">
+                <h3 id="itinerario">Itinerario de 5 días y 4 noches</h3>
+                <ul>
+                    <li>Día 1: Visita a la Torre Eiffel y paseo por los Campos Elíseos.</li>
+                    <li>Día 2: Exploración del Louvre y paseo en barco por el Sena.</li>
+                    <li>Día 3: Tour por la Catedral de Notre-Dame y el Barrio Latino.</li>
+                    <li>Día 4: Excursión al Palacio de Versalles y sus jardines.</li>
+                    <li>Día 5: Tiempo libre para compras y despedida de París.</li>
+                </ul>
+            </section>
+
+            <section class="listas">
+                <h3 id="costos">Costos de este plan:</h3>
+                <ul>
+                    <li>Traslados: $20-40 por trayecto en transporte público.</li>
+                    <li>Hospedaje: $100-200 por noche en un hotel de gama media.</li>
+                    <li>Entradas a sitios turísticos: $15-30 por persona en promedio.</li>
+                    <li>Comidas: $20-40 por comida en restaurantes locales.</li>
+                    <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
+                </ul>
+
+                <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
+            </section>
 
             <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/AQ-J_TI7TBk?si=c_ACw8Y4_FpzmoJK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AQ-J_TI7TBk?si=c_ACw8Y4_FpzmoJK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </section>
+
         </article>
+
         <footer>
-            <b>Sitio Agencia Travel Partner desarrollado por:</b> Salomé Garcés.<br>
-            <b>Contacto:</b> msalome.garces@udea.edu.co
+            <div class="pie">
+                <p>Sitio Agencia TRAVEL PARTNERS desarrollado por: Salomé Garcés.<br>
+                Contacto: msalome.garces@udea.edu.co
+                </p>
+            </div>
         </footer>
+        
     </main>
 
 </body>

@@ -5,97 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartagena</title>
     <link rel="shortcut icon" href="imagenes/icons8-favicon-48.png">
-    <style>
-        main {
-            display: grid;
-            grid-template-areas:
-                "header header"
-                "nav nav"
-                "article article"
-                "footer footer";
-            grid-template-columns: 1fr 2fr;
-        }
-
-        header {
-            text-align: center;
-            font-size: 25px;
-            grid-area: header;
-        }
-
-        nav {
-            font-weight: bold;
-            grid-area: nav;
-        }
-
-        aside {
-            border: 2px solid black;
-            text-align: center;
-            font-weight: bold;
-            grid-area: aside;
-        }
-
-        article {
-            grid-area: article;
-        }
-
-        footer {
-            border: 1px solid rgb(17, 4, 70);
-            background-color: #67d1e914;
-            text-align: center;
-            font-size: 15px;
-            grid-area: footer;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesindex.css">
 </head>
 <body>
     <main>
+
         <header>
-            <h1 style="color: rgb(6, 6, 104)">Cartagena</h1>
-            <img src="imagenes\Cartagena.jpg"  height="550px" width="1500px"/>
+            <div class="cabecero">
+             <h1 id="tituloaux">Cartagena</h1>
+                <img id="imageninicial" src="imagenes\Cartagena.jpg"/>
+                <nav>
+                    <a id="c_inicio" href="index.html#titulo">Inicio</a>
+                    <a id="c_acercade" href="index.html#acercade">Acerca de</a>
+                    <a id="c_destinos"href="index.html#destinos">Destinos</a>
+                </nav>
+             </div>
         </header>
-        <nav><a href="index.html" >Regresar al inicio</a></nav>
+
+        <aside>
+            <nav class="navlateral">
+                <a id="l_costos"href="cartagena.html#costos">Costos</a>
+                <a id="l_itinerario"href="cartagena.html#itinerario">Itinerario</a>
+                <a id="l_atractivo" href="cartagena.html#atractivos">Atractivos</a>
+                <a id="l_descubre" href="cartagena.html#descubre">Descubre</a>
+               
+             
+            </nav>
+        </aside>
+    
         <article>
-            <h2 style="color: rgb(6, 6, 104)">Descubre la magia de Cartagena</h2>
-            <p> Bienvenido a Cartagena de Indias, una joya colonial en la costa caribeña de Colombia que cautiva con su arquitectura histórica, 
-                sus coloridas calles empedradas y su ambiente vibrante. Esta ciudad amurallada, declarada Patrimonio de la Humanidad por la UNESCO, 
-                te transporta a un pasado lleno de historia y romance, mientras te sumerge en la calidez de su cultura y su gente.
-            </p>
-            <h2 style="color: rgb(6, 6, 104)" >Atractivos turísticos:</h2>
-            <ul>
-            <li>Ciudad Amurallada: Centro histórico con calles empedradas, plazas y fortificaciones.</li> 
-            <li>Castillo de San Felipe de Barajas: Impresionante fortaleza colonial con vistas panorámicas.</li> 
-            <li>Playa de Bocagrande: Zona turística con playas, hoteles y restaurantes.</li> 
-            <li>Islas del Rosario: Archipiélago de islas con arrecifes de coral ideales para bucear y hacer snorkel.</li> 
-            <li>Getsemaní: Barrio bohemio con murales callejeros, cafés y vida nocturna.</li> 
-            </ul>
+            <section class="aboutus">
+                <h2 id="descubre">Descubre la magia de Cartagena</h2>
+                <p> 
+                    Bienvenido a Cartagena de Indias, una ciudad colonial situada en la costa caribeña de Colombia, cuyo encanto cautiva con su magnífica arquitectura histórica, calles empedradas salpicadas de colores y un ambiente vibrante que invita a la exploración. Esta ciudad amurallada, declarada Patrimonio de la Humanidad por la UNESCO, te sumerge en un viaje en el tiempo, transportándote a un pasado lleno de historia y romance. Cada esquina de Cartagena cuenta una historia, desde las majestuosas fortalezas hasta los balcones adornados con flores que bordean las plazas pintorescas. Más allá de su fascinante arquitectura, Cartagena te envuelve en la calidez de su cultura y la hospitalidad de su gente, que te reciben con los brazos abiertos y te invitan a descubrir los tesoros ocultos de esta ciudad encantadora.
+                </p>
+             </section>
 
-            
-            <h3 style="color: rgb(6, 6, 104)">Itinerario de 5 días y 4 noches</h3>
-            <ul>
-                <li>Día 1: Recorrido por la Ciudad Amurallada y cena en la Plaza de Santo Domingo.</li>
-                <li>Día 2: Excursión a las Islas del Rosario y snorkel en los arrecifes de coral.</li>
-                <li>Día 3: Visita al Castillo de San Felipe de Barajas y paseo por las murallas..</li>
-                <li>Día 4: Tour por el Convento de la Popa y tiempo libre en la Playa de Bocagrande.</li>
-                <li>Día 5: Tiempo libre para compras y despedida de Cartagena.</li>
-            </ul>
-            <h3 style="color: rgb(6, 6, 104)">Costos de este plan:</h3>
-            <ul>
-                <li>Traslados: $10-20 por trayecto en transporte público.</li>
-                <li>Hospedaje: $80-100 por noche en un hotel de gama media.</li>
-                <li>Entradas a sitios turísticos: $15-30 por persona en promedio.</li>
-                <li>Comidas: $20-40 por comida en restaurantes locales.</li>
-                <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
-            </ul>
-
-            <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
-            <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VN0yGGcVii0?si=U451V13tZ7D_CXX6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+            <section class="listas">
+                <h2 id="atractivos">Atractivos turísticos:</h2>
+                
+                <div class="lugares">
+                    <div class="contenedor-img img1">
+                        <img src="imagenes/ciudadamurallada.jpg" alt="Lima">
+                        <div class="textos">Ciudad Amurallada: <br>Centro histórico con calles empedradas, plazas y fortificaciones.</div>
+                    </div>
+                    <div class="contenedor-img img2">
+                        <img src="imagenes/castillo.jpg" alt="Lima">
+                        <div class="textos">Castillo de San Felipe de Barajas: <br>Impresionante fortaleza colonial con vistas panorámicas.</div>
+                    </div>
+                    <div class="contenedor-img img3">
+                        <img src="imagenes/bocagrande.jpg" alt="Lima">
+                        <div class="textos">Playa de Bocagrande: <br>Zona turística con playas, hoteles y restaurantes.</div>
+                    </div>
+                    <div class="contenedor-img img4">
+                        <img src="imagenes/islasdelrosario.jpg" alt="Lima">
+                        <div class="textos">Islas del Rosario:<br> Archipiélago de islas con arrecifes de coral ideales para bucear y hacer snorkel.</div>
+                    </div>
+                    <div class="contenedor-img img5">
+                        <img src="imagenes/getsemaní.jpg" alt="Lima">
+                        <div class="textos">Getsemaní:<br> Barrio bohemio con murales callejeros, cafés y vida nocturna.</div>
+                    </div>             
+                </div>
             </section>
+
+
+            <section class="listas">
+                <h3 id="itinerario">Itinerario de 5 días y 4 noches</h3>
+                <ul>
+                    <li>Día 1: Recorrido por la Ciudad Amurallada y cena en la Plaza de Santo Domingo.</li>
+                    <li>Día 2: Excursión a las Islas del Rosario y snorkel en los arrecifes de coral.</li>
+                    <li>Día 3: Visita al Castillo de San Felipe de Barajas y paseo por las murallas..</li>
+                    <li>Día 4: Tour por el Convento de la Popa y tiempo libre en la Playa de Bocagrande.</li>
+                    <li>Día 5: Tiempo libre para compras y despedida de Cartagena.</li>
+                </ul>
+            </section>
+
+            <section class="listas">
+                <h3 id="costos">Costos de este plan:</h3>
+                <ul>
+                    <li>Traslados: $10-20 por trayecto en transporte público.</li>
+                    <li>Hospedaje: $80-100 por noche en un hotel de gama media.</li>
+                    <li>Entradas a sitios turísticos: $15-30 por persona en promedio.</li>
+                    <li>Comidas: $20-40 por comida en restaurantes locales.</li>
+                    <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
+                </ul>
+
+                <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
+             </section>
+        
+            <section>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VN0yGGcVii0?si=U451V13tZ7D_CXX6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+
         </article>
-        <footer>
-            <b>Sitio Agencia Travel Partner desarrollado por:</b> Salomé Garcés.<br>
-            <b>Contacto:</b> msalome.garces@udea.edu.co
+
+         <footer>
+            <div class="pie">
+                <p>Sitio Agencia TRAVEL PARTNERS desarrollado por: Salomé Garcés.<br>
+                Contacto: msalome.garces@udea.edu.co
+                </p>
+            </div>
         </footer>
+
 
     </main>
 </body>

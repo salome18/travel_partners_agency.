@@ -5,86 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Partners</title>
     <link rel="shortcut icon" href="imagenes/icons8-favicon-48.png">
-
-    <style>
-        main {
-            display: grid;
-            grid-template-areas:
-                "header header"
-                "article article"
-                "nav nav"
-                "footer footer";
-            grid-template-columns: 1fr 2fr;
-        }
-
-        header {
-            border: 1px solid black;
-            text-align: center;
-            background-color: #67d1e92f;
-            font-size: 25px;
-            grid-area: header;
-        }
-
-        nav {
-            font-weight: bold;
-            grid-area: nav;
-        }
-
-        aside {
-            border: 2px solid black;
-            text-align: center;
-            font-weight: bold;
-            grid-area: aside;
-        }
-
-        article {
-            grid-area: article;
-        }
-
-        footer {
-            border: 1px solid rgb(17, 4, 70);
-            background-color: #67d1e914;
-            text-align: center;
-            font-size: 15px;
-            grid-area: footer;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesindex.css">
 </head>
 <body>
-    <main>
-        <header>
-            <h1 style="color: rgb(6, 6, 104)"">TRAVEL PARTNERS</h1>
-            <img src="imagenes\turismo.jpg"  height="550px" width="1500px"/>
+    <main>  
+
+        <header id="Inicio">
+            <div class="cabecero">
+                <h1 id="titulo">TRAVEL<span class="part2">PARTNERS </span> <span><img src="imagenes/icons8-favicon-48.png"></span></h1>
+                <img id="imageninicial" src="/imagenes/tourism.jpg">
+                <nav>
+                    <a id="c_inicio" href="#Inicio">Inicio</a>
+                    <a id="c_acercade" href="#acercade">Acerca de</a>
+                    <a id="c_destinos"href="#destinos">Destinos</a>
+                </nav>
+            </div>
         </header>
+        
         <article>
-            <h2 style="color: rgb(11, 11, 144)">Acerca de nosotros</h2>
-            <p>En <b>Travel Partners</b>, creemos que cada viaje es una oportunidad para descubrir, 
-                explorar y conectar con el mundo que nos rodea. Desde majestuosas montañas hasta exuberantes selvas tropicales, 
-                desde modernas ciudades hasta las más bellas playas, nuestro objetivo es brindarte experiencias inolvidables 
-                que enriquezcan tu vida y te dejen con recuerdos que perdurarán para siempre.</p>
+            <h2 id="acercade">Acerca de nosotros</h2>
+            <div class="aboutus">
+                <p>En <b>Travel Partners</b>, creemos que cada viaje es una oportunidad para descubrir, 
+                    explorar y conectar con el mundo que nos rodea. Desde majestuosas montañas hasta exuberantes selvas tropicales, 
+                    desde modernas ciudades hasta las más bellas playas, nuestro objetivo es brindarte experiencias inolvidables 
+                    que enriquezcan tu vida y te dejen con recuerdos que perdurarán para siempre. </p>
+                
+                <p> Nos esforzamos por ofrecerte no solo destinos increíbles, sino también servicios excepcionales que se adapten a tus necesidades y deseos. Ya sea que estés planeando unas vacaciones de aventura en la naturaleza, un viaje relajante a la orilla del mar o una escapada cultural a una ciudad vibrante, estamos aquí para hacer que cada momento sea inolvidable.</p> 
+
+                <p>  Nuestro equipo está compuesto por apasionados expertos en viajes que están dedicados a brindarte atención personalizada y asesoramiento experto en cada etapa de tu viaje. Desde la planificación inicial hasta el regreso a casa, estamos comprometidos a garantizar que tu experiencia sea fluida, segura y llena de momentos memorables.
+                    
+                    En Travel Partners, nos enorgullece abrir las puertas al mundo para que puedas descubrir su belleza, diversidad y magia. Únete a nosotros en este viaje y déjanos inspirarte a explorar, soñar y conectar con todo lo que el mundo tiene para ofrecer.</p>
+            </div>
         </article>
+        
         <nav>
-                <h3 style="color: rgb(11, 11, 144)">Destinos disponibles:</h3>
-            <ul>
-                <li>Lima</li>
-                <a href="lima.html" target="_blank"> <img src="imagenes\Lima.jpg" height="200px" width="200px"/></a>
-                <li>Cancún</li>
-                <a href="cancun.html" target="_blank"> <img src="imagenes\Cancun.jpg" height="200px" width="200px"/></a>
-                <li>Paris</li>
-                <a href="paris.html" target="_blank"> <img src="imagenes\Paris.jpg" height="200px" width="200px"/></a>
-                <li>Roma</li>
-                <a href="roma.html" target="_blank"> <img src="imagenes\Roma.jpg" height="200px" width="200px"/></a>
-                <li>New York</li>
-                <a href="ny.html" target="_blank"> <img src="imagenes\NYC.jpg" height="200px" width="200px"/></a>
-                <li>Cartagena</li>
-                <a href="cartagena.html" target="_blank"> <img src="imagenes\Cartagena.jpg" height="200px" width="200px"/></a>
-            </ul>
-     </nav>
+            <h2 id="destinos">Nuestros destinos:</h2>
+            <div class="destinations">
+                <a href="lima.html" target="_blank" class="lima"><img src="imagenes\Lima.jpg" alt="Lima"><span class="texto">Lima</span></a>
+                <a href="cancun.html" target="_blank" class="cancun"><img src="imagenes\Cancun.jpg" alt="Cancún"> <span class="texto">Cancún</span></a>
+                <a href="paris.html" target="_blank" class="paris"><img src="imagenes\Paris.jpg" alt="París"> <span class="texto">París</span></a>
+                <a href="roma.html" target="_blank" class="roma"><img src="imagenes\Roma.jpg" alt="Roma"><span class="texto">Roma</span></a>
+                <a href="ny.html" target="_blank" class="ny"><img src="imagenes\NYC.webp" alt="Nueva York"><span class="texto">New York</span></a>
+                <a href="cartagena.html" target="_blank" class="cartagena"><img src="imagenes\Cartagena.jpg" alt="Cartagena"><span class="texto">Cartagena</span></a>
+            </div>
+        </nav>
 
         <footer>
-            <b>Sitio Agencia Travel Partner desarrollado por:</b> Salomé Garcés.<br>
-            <b>Contacto:</b> msalome.garces@udea.edu.co
-        </footer>
+            <div class="pie">
+                <p>Sitio Agencia TRAVEL PARTNERS desarrollado por: Salomé Garcés.<br>
+                Contacto: msalome.garces@udea.edu.co
+                </p>
+            </div>
+        </footer>   
+
     </main>
 </body>
 </html>

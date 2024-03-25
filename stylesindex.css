@@ -1,0 +1,295 @@
+*{
+    background-color: #030716;
+    font-family: Century Gothic;
+}
+
+#imageninicial{
+    height: 550px;
+    width: 1372px;
+    border-radius: 0px 0px 0px 50px;
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cabecero{
+    position: relative; 
+}
+#titulo,.part2, #titulo img{
+    z-index: 999;
+    position: absolute;
+    position: fixed;
+    text-align: left;
+    font-size: 30px;
+    color:#265073 ;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: rgba(14, 12, 24, 0);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.885);
+    -webkit-text-stroke:2px #070f2b5d;
+}
+
+#titulo{
+    margin-left: 75px;
+    padding: 0px;
+}
+
+#titulo img{
+    margin-left: 145px; 
+}
+
+#titulo::first-letter,.part2::first-letter{
+    font-size: 40px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#tituloaux{
+    position: absolute;
+    background-color: rgba(14, 12, 24, 0);
+    color:#eff4e2b1 ;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.885);
+    -webkit-text-stroke:2px #070f2b83;
+    margin-left: 80px;
+    margin-top: 15px;
+    font-size: 50px;
+}
+.cabecero a{
+    display: inline;
+    position: absolute;
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color:#0a1333;
+    color:#eff4e2;
+    text-decoration: none;
+    margin: 7px 10px;
+    padding: 12px;
+    border-radius: 0px 0px 0px 20px;
+    font-size: 20px;
+    z-index: 999;
+    text-shadow: 2px 2px 4px #eff4e26c;
+    box-shadow: -3px 4px 5px #eff4e219;
+}
+
+.cabecero a:hover{
+    background-color:#2d9496ef;
+    color:#070F2B;
+    font-size: 21px;
+    text-shadow: 3px 3px 6px #0f0f0db0;
+}
+
+#c_inicio {
+    right: 316px; 
+}
+
+#c_acercade {
+    right: 185px; 
+}
+
+#c_destinos {
+    right: 80px; 
+}
+
+.navlateral{
+    display:flex;
+    flex-direction:column-reverse;
+    width: 3%;
+    height: 98%;
+    position: fixed;
+    right: 0;
+    top:0;
+    margin-right: 5px;
+    margin-top: 8px;
+    justify-content: flex-start;
+    background-color:#f1fada84;
+    border-radius: 0px 0px 0px 30px; 
+    box-shadow: -3px 4px 5px #eff4e24b;
+    
+}
+
+.navlateral a{
+    text-decoration: none;
+    text-align: justify;
+    left: 0;
+    background-color:#f1fada00;
+    margin-bottom: 50px;
+    transform: rotate(-90deg); 
+    align-items: center;
+    
+}
+
+#l_descubre,#l_atractivo,#l_itinerario,#l_costos{
+    color: #070F2B;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px #0f0f0db0;
+}
+
+#l_descubre:hover,#l_costos:hover,#l_itinerario:hover,#l_atractivo:hover{
+    font-size: 21px;
+    text-shadow: 3px 3px 6px #0f0f0db0;
+}
+
+#l_costos{
+    margin-bottom: 50px;
+}
+
+#l_itinerario{
+    margin-bottom:150px;
+}
+
+#l_atractivo{
+    margin-bottom: 150px;
+}
+
+#l_descubre{
+    margin-bottom: 150px;
+}
+
+.aboutus p{
+    color:rgba(245, 245, 245, 0.6);
+    font-size: 18px;
+    margin-top: 0px;
+    padding: 0px 150px 0 150px;
+    text-align: justify;
+}
+
+.listas ul, .listas p{
+    color:rgba(245, 245, 245, 0.6);
+    font-size: 18px;
+    margin-top: 0px;
+    padding: 0px 150px 0 400px;
+    text-align: justify;
+}
+
+
+#acercade, #destinos,#descubre,#atractivos,#itinerario,#costos{
+    text-shadow: 2px 2px 4px #eff4e26c;
+    border-radius: 0px 200px;
+    font-size: 30px;
+    color: #eff4e2ba;
+    margin-left: 50px;
+    margin-right: 90px;
+    padding-bottom:5px;
+    border: 10px none #9ad0c279;
+    border-style: none none double none;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.destinations {
+    margin: 0px 150px 200px 150px;
+    display: grid;
+    grid-template-areas: 
+        "cancun lima cartagena cartagena"
+        "cancun lima cartagena cartagena"
+        "paris paris ny roma"
+        "paris paris ny roma"
+        "paris paris ny roma";
+        
+    gap: 5px;
+}
+
+.lima { grid-area: lima; }
+.cancun { grid-area: cancun; }
+.paris { grid-area: paris; }
+.roma { grid-area: roma; }
+.ny { grid-area: ny; }
+.cartagena { grid-area: cartagena; }
+
+.destinations img, .lugares img{
+    border-radius: 0px 20px 0px 20px; 
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.destinations a{
+    position: relative;
+}
+
+.destinations a:hover img{
+    opacity: 20%;
+}
+
+.destinations .texto{
+    position: absolute;
+    top: 45%; 
+    left: 30%; 
+    color: rgba(255, 255, 255, 0.459);
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0); 
+    opacity: 0; 
+}
+
+.destinations a:hover .texto{
+    opacity: 100%;
+}
+
+.contenedor-img {
+    position: relative;
+    display: block; 
+    height: 500px;
+}
+
+.lugares{
+    margin: 0px 150px 200px 150px;
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 img3 img3"
+    "img1 img2 img3 img3"
+    "img1 img2 img3 img3"
+    "img4 img4 img5 img5"
+    "img4 img4 img5 img5";
+       
+    gap: 5px;
+}
+
+.img1{ grid-area: img1; }
+.img2 { grid-area: img2; }
+.img3{ grid-area: img3; }
+.img4{ grid-area: img4; }
+.img5 { grid-area: img5; }
+
+
+.contenedor-img:hover img{
+    opacity: 20%; 
+}
+
+.textos {
+    display: none; 
+    text-align: justify;
+    
+}
+
+.contenedor-img:hover .textos {
+    display: block; 
+    position: absolute;
+    top: 40%; 
+    left: 15%;
+    right: 15%;
+    color: rgba(255, 255, 255, 0.604);
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+
+
+.video{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.pie p{
+    background-color: #2d9496c4;
+    padding: 20px;
+    margin: 0px 80px 0 50px;
+    text-align: center;
+    font-size: 15px;
+    color: #eff4e27b;
+    border-radius: 0px 0px 0px 40px;
+}

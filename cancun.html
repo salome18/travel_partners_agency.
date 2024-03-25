@@ -5,98 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cancun</title>
     <link rel="shortcut icon" href="imagenes/icons8-favicon-48.png">
-    <style>
-        main {
-            display: grid;
-            grid-template-areas:
-                "header header"
-                "nav nav"
-                "article article"
-                "footer footer";
-            grid-template-columns: 1fr 2fr;
-        }
-
-        header {
-            text-align: center;
-            font-size: 25px;
-            grid-area: header;
-        }
-
-        nav {
-            font-weight: bold;
-            grid-area: nav;
-        }
-
-        aside {
-            border: 2px solid black;
-            text-align: center;
-            font-weight: bold;
-            grid-area: aside;
-        }
-
-        article {
-            grid-area: article;
-        }
-
-        footer {
-            border: 1px solid rgb(17, 4, 70);
-            background-color: #67d1e914;
-            text-align: center;
-            font-size: 15px;
-            grid-area: footer;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesindex.css">
 </head>
 <body>
     <main>
+
         <header>
-            <h1 style="color: rgb(6, 6, 104)">Cancún</h1>
-            <img src="imagenes\Cancun.jpg"  height="550px" width="1500px"/>
+            <div class="cabecero">
+             <h1 id="tituloaux">Cancún</h1>
+                <img id="imageninicial" src="imagenes\Cancun.jpg"/>
+                <nav>
+                    <a id="c_inicio" href="index.html#titulo">Inicio</a>
+                    <a id="c_acercade" href="index.html#acercade">Acerca de</a>
+                    <a id="c_destinos"href="index.html#destinos">Destinos</a>
+                </nav>
+            </div>
         </header>
-        <nav><a href="index.html" >Regresar al inicio</a></nav>
+
+        <aside>
+            <nav class="navlateral">
+                <a id="l_costos"href="cancun.html#costos">Costos</a>
+                <a id="l_itinerario"href="cancun.html#itinerario">Itinerario</a>
+                <a id="l_atractivo" href="cancun.html#atractivos">Atractivos</a>
+                <a id="l_descubre" href="cancun.html#descubre">Descubre</a>
+
+            </nav>
+        </aside>
+
         <article>
-            <h2 style="color: rgb(6, 6, 104)">Descubre la magia de Cancún</h2>
-            <p> Bienvenido a Cancún, un destino que deslumbra con sus playas de arena blanca, aguas cristalinas y una vida nocturna vibrante. 
-                Situada en la costa noreste de la península de Yucatán en México, Cancún es un paraíso tropical que ofrece una experiencia vacacional inigualable.
-                Sumérgete en las aguas turquesas del mar Caribe y déjate llevar por la belleza de sus playas interminables.
-            </p>
-            <h2 style="color: rgb(6, 6, 104)" >Atractivos turísticos:</h2>
-            <ul>
-            <li>Ruinas Mayas de Tulum: Antigua ciudad maya frente al mar Caribe.</li> 
-            <li>Parque Xcaret: Parque eco-arqueológico con actividades acuáticas y culturales</li> 
-            <li>Chichén Itzá: Una de las Siete Maravillas del Mundo Moderno, sitio arqueológico maya.</li> 
-            <li>Isla Mujeres: Isla cercana con playas tranquilas y el Parque Natural Garrafón</li> 
-            <li>Cenotes: Cavernas y pozos de agua dulce para nadar y hacer snorkel.</li> 
-            </ul>
+            <section class="aboutus">
+                <h2 id="descubre">Descubre la magia de Cancún</h2>
+                <p> Bienvenido a Cancún, una joya turística que deslumbra con su deslumbrante combinación de playas de arena blanca como la nieve, aguas cristalinas que reflejan los tonos más sublimes de turquesa y una vida nocturna vibrante que enciende las noches tropicales con una energía inigualable. Ubicada de manera estratégica en la costa noreste de la península de Yucatán en México, Cancún emerge como un auténtico paraíso tropical que promete ofrecer una experiencia vacacional inigualable, donde cada momento es una postal de ensueño. Sumérgete en la exquisita calidez del mar Caribe, dejándote cautivar por la fascinante belleza de sus interminables playas que invitan a la relajación y a la contemplación de espectaculares atardeceres. Experimenta una aventura sin igual mientras exploras las maravillas naturales y culturales que esta región tiene para ofrecer, desde fascinantes ruinas arqueológicas hasta emocionantes actividades acuáticas. En Cancún, cada rincón ofrece una oportunidad para crear recuerdos inolvidables y disfrutar de la verdadera magia del Caribe mexicano.
+                </p>
+            </section>
 
-            
-            <h3 style="color: rgb(6, 6, 104)">Itinerario de 5 días y 4 noches</h3>
-            <ul>
-                <li>Día 1: Relax en las playas de la Zona Hotelera y cena en un restaurante frente al mar.</li>
-                <li>Día 2: Excursión a Isla Mujeres y snorkel en el Parque Natural Garrafón.</li>
-                <li>Día 3: Visita al Parque Xcaret y espectáculo nocturno de luces.</li>
-                <li>Día 4: Día de playa en la Playa Delfines y cena de mariscos en un restaurante local.</li>
-                <li>Día 5: Tiempo libre para compras y despedida de Cancún.</li>
-            </ul>
-            <h3 style="color: rgb(6, 6, 104)">Costos de este plan:</h3>
-            <ul>
-                <li>Traslados: $10-20 por trayecto en transporte público.</li>
-                <li>Hospedaje: $100-200 por noche en un hotel de gama media.</li>
-                <li>Entradas a sitios turísticos: $50-100 por persona en promedio.</li>
-                <li>Comidas: $10-30 por comida en restaurantes locales.</li>
-                <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
-            </ul>
+            <section class="listas">
+                <h2 id="atractivos">Atractivos turísticos:</h2>
+                
+                <div class="lugares">
+                    <div class="contenedor-img img1">
+                        <img src="imagenes/ruinastulum.jpeg" alt="Lima">
+                        <div class="textos">Ruinas Mayas de Tulum: <br> Antigua ciudad maya frente al mar Caribe.</div>
+                    </div>
+                    <div class="contenedor-img img2">
+                        <img src="imagenes/xcaret.jpg" alt="Lima">
+                        <div class="textos">Parque Xcaret: <br> Parque eco-arqueológico con actividades acuáticas y culturales</div>
+                    </div>
+                    <div class="contenedor-img img3">
+                        <img src="imagenes/chichenitza.jpg" alt="Lima">
+                        <div class="textos">Chichén Itzá: <br> Una de las Siete Maravillas del Mundo Moderno, sitio arqueológico maya.</div>
+                    </div>
+                    <div class="contenedor-img img4">
+                        <img src="imagenes/islamujeres.jpg" alt="Lima">
+                        <div class="textos">Isla Mujeres:<br>  Isla cercana con playas tranquilas y el Parque Natural Garrafón</div>
+                    </div>
+                    <div class="contenedor-img img5">
+                        <img src="imagenes/cenotes.jpg" alt="Lima">
+                        <div class="textos">Cenotes:<br>  Cavernas y pozos de agua dulce para nadar y hacer snorkel.</div>
+                    </div>             
+                </div>
+            </section>
 
-            <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
+            <section class="listas">
+                <h3 id="itinerario">Itinerario de 5 días y 4 noches</h3>
+                <ul>
+                    <li>Día 1: Relax en las playas de la Zona Hotelera y cena en un restaurante frente al mar.</li>
+                    <li>Día 2: Excursión a Isla Mujeres y snorkel en el Parque Natural Garrafón.</li>
+                    <li>Día 3: Visita al Parque Xcaret y espectáculo nocturno de luces.</li>
+                    <li>Día 4: Día de playa en la Playa Delfines y cena de mariscos en un restaurante local.</li>
+                    <li>Día 5: Tiempo libre para compras y despedida de Cancún.</li>
+                </ul>
+            </section>
+
+            <section class="listas">
+                <h3 id="costos">Costos de este plan:</h3>
+                <ul>
+                    <li>Traslados: $10-20 por trayecto en transporte público.</li>
+                    <li>Hospedaje: $100-200 por noche en un hotel de gama media.</li>
+                    <li>Entradas a sitios turísticos: $50-100 por persona en promedio.</li>
+                    <li>Comidas: $10-30 por comida en restaurantes locales.</li>
+                    <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
+                </ul>
+
+                <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
+            </section>
 
             <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/jwQRohrKVg0?si=DXnBKvrcjY6CG91t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jwQRohrKVg0?si=DXnBKvrcjY6CG91t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </section>
+            
         </article>
+
         <footer>
-            <b>Sitio Agencia Travel Partner desarrollado por:</b> Salomé Garcés.<br>
-            <b>Contacto:</b> msalome.garces@udea.edu.co
+            <div class="pie">
+                <p>Sitio Agencia TRAVEL PARTNERS desarrollado por: Salomé Garcés.<br>
+                Contacto: msalome.garces@udea.edu.co
+                </p>
+            </div>
         </footer>
+
     </main>
 </body>
 </html>

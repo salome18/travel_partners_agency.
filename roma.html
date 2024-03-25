@@ -5,99 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roma</title>
     <link rel="shortcut icon" href="imagenes/icons8-favicon-48.png">
-
-    <style>
-        main {
-            display: grid;
-            grid-template-areas:
-                "header header"
-                "nav nav"
-                "article article"
-                "section section"
-                "footer footer";
-            grid-template-columns: 1fr 2fr;
-        }
-
-        header {
-            text-align: center;
-            font-size: 25px;
-            grid-area: header;
-        }
-
-        nav {
-            font-weight: bold;
-            grid-area: nav;
-        }
-
-        aside {
-            border: 2px solid black;
-            text-align: center;
-            font-weight: bold;
-            grid-area: aside;
-        }
-
-        article {
-            grid-area: article;
-        }
-
-        footer {
-            border: 1px solid rgb(17, 4, 70);
-            background-color: #67d1e914;
-            text-align: center;
-            font-size: 15px;
-            grid-area: footer;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesindex.css">
 </head>
 <body>
     <main>
         <header>
-            <h1 style="color: rgb(6, 6, 104)">Roma</h1>
-            <img src="imagenes\Roma.jpg"  height="550px" width="1500px"/>
+            <div class="cabecero">
+             <h1 id="tituloaux" >Roma</h1>
+                <img id="imageninicial" src="imagenes\Roma.jpg"/>
+                <nav>
+                    <a id="c_inicio" href="index.html#titulo">Inicio</a>
+                    <a id="c_acercade" href="index.html#acercade">Acerca de</a>
+                    <a id="c_destinos"href="index.html#destinos">Destinos</a>
+                </nav>
+            </div>
         </header>
-        <nav><a href="index.html">Regresar al inicio</a></nav>
+
+        <aside>
+            <nav class="navlateral">
+                <a id="l_costos"href="roma.html#costos">Costos</a>
+                <a id="l_itinerario"href="roma.html#itinerario">Itinerario</a>
+                <a id="l_atractivo" href="roma.html#atractivos">Atractivos</a>
+                <a id="l_descubre" href="roma.html#descubre">Descubre</a>
+               
+             
+            </nav>
+        </aside>
+
         <article>
-            <h2 style="color: rgb(6, 6, 104)">Descubre la magia de Roma</h2>
-            <p>Bienvenido a Roma, la Ciudad Eterna, donde cada calle adoquinada,
-            cada ruina antigua y cada rincón histórico te cuentan la historia de un imperio legendario y una civilización perdurable. 
-            Conocida por su riqueza cultural, su arte excepcional y su gastronomía deliciosa, 
-            Roma es un destino que te transporta en el tiempo y te sumerge en la grandeza del pasado y la vitalidad del presente.
-            </p>
-            <h2 style="color: rgb(6, 6, 104)" >Atractivos turísticos:</h2>
-            <ul>
-            <li>Coliseo: Icono emblemático de la antigua Roma, escenario de batallas de gladiadores.</li> 
-            <li>Ciudad del Vaticano: Basílica de San Pedro, Museos Vaticanos y la Capilla Sixtina.</li> 
-            <li>Fontana di Trevi: Fuente barroca famosa por sus leyendas y su belleza escénica.</li> 
-            <li>Basílica de San Pedro: Impresionante iglesia en el corazón del Vaticano, con vistas desde la cúpula.</li> 
-            <li>Foro Romano: Ruinas antiguas que muestran la grandeza del Imperio Romano.</li> 
-            </ul>
-
-            <h3 style="color: rgb(6, 6, 104)">Itinerario de 5 días y 4 noches</h3>
-            <ul>
-                <li>Día 1: Visita al Coliseo y el Foro Romano.</li>
-                <li>Día 2: Exploración de la Ciudad del Vaticano y sus museos.</li>
-                <li>Día 3: Tour por el Panteón y la Fontana di Trevi.</li>
-                <li>Día 4: Excursión a las Catacumbas de Roma y el Trastevere.</li>
-                <li>Día 5: Tiempo libre para compras y despedida de Roma.</li>
-            </ul>
-            <h3 style="color: rgb(6, 6, 104)">Costos de este plan:</h3>
-            <ul>
-                <li>Traslados: $20-40 por trayecto en transporte público.</li>
-                <li>Hospedaje: $100-200 por noche en un hotel de gama media.</li>
-                <li>Entradas a sitios turísticos: $15-30 por persona en promedio.</li>
-                <li>Comidas: $20-40 por comida en restaurantes locales.</li>
-                <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
-            </ul>
-
-            <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
-            <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GTgx971O2Ow?si=qi96yOPMPEHTvPcr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <section class="aboutus">
+                <h2 id="descubre">Descubre la magia de Roma</h2>
+                <p>Bienvenido a Roma, la Ciudad Eterna, donde cada calle adoquinada, cada ruina antigua y cada rincón histórico te transportan a través de los siglos para contar la historia de un imperio legendario y una civilización perdurable. Conocida por su riqueza cultural, su arte excepcional y su gastronomía deliciosa, Roma es mucho más que una ciudad; es un destino que te sumerge en la grandeza del pasado y te invita a experimentar la vitalidad del presente. Desde los majestuosos restos del Coliseo hasta la impresionante grandeza del Vaticano, cada paso que das en esta ciudad revela una nueva maravilla que te deja maravillado. Roma es una sinfonía de contrastes, donde la antigüedad y la modernidad se entrelazan en una armonía única, ofreciendo a sus visitantes una experiencia inolvidable llena de historia, arte y belleza. En Roma, el pasado cobra vida de una manera que te deja sin aliento, mientras que el presente te cautiva con su encanto y su energía vibrante.
+                </p>
             </section>
+
+            <section class="listas">
+                <h2 id="atractivos">Atractivos turísticos:</h2>
+                
+                <div class="lugares">
+                    <div class="contenedor-img img1">
+                        <img src="imagenes/coliseo.jpg" alt="Lima">
+                        <div class="textos">Coliseo: <br>Icono emblemático de la antigua Roma, escenario de batallas de gladiadores.</div>
+                    </div>
+                    <div class="contenedor-img img3">
+                        <img src="imagenes/vaticano.jpg" alt="Lima">
+                        <div class="textos">Ciudad del Vaticano:<br> Basílica de San Pedro, Museos Vaticanos y la Capilla Sixtina.</div>
+                    </div>
+                    <div class="contenedor-img img2">
+                        <img src="imagenes/fontana.jpg" alt="Lima">
+                        <div class="textos">Fontana di Trevi:<br> Fuente barroca famosa por sus leyendas y su belleza escénica.</div>
+                    </div>
+                    <div class="contenedor-img img5">
+                        <img src="imagenes/sanpedro.jpg" alt="Lima">
+                        <div class="textos">Basílica de San Pedro:<br>Impresionante iglesia en el corazón del Vaticano, con vistas desde la cúpula.</div>
+                    </div>
+                    <div class="contenedor-img img4">
+                        <img src="imagenes/fororomano.jpg" alt="Lima">
+                        <div class="textos">Foro Romano:<br> Ruinas antiguas que muestran la grandeza del Imperio Romano.</div>
+                    </div>             
+                </div>
+            </section>
+
+            <section class="listas">                 
+                    <h3 id="itinerario">Itinerario de 5 días y 4 noches</h3>
+                    <ul>
+                        <li>Día 1: Visita al Coliseo y el Foro Romano.</li>
+                        <li>Día 2: Exploración de la Ciudad del Vaticano y sus museos.</li>
+                        <li>Día 3: Tour por el Panteón y la Fontana di Trevi.</li>
+                        <li>Día 4: Excursión a las Catacumbas de Roma y el Trastevere.</li>
+                        <li>Día 5: Tiempo libre para compras y despedida de Roma.</li>
+                    </ul>
+            </section>
+
+            <section class="listas"> 
+                    <h3 id="costos">Costos de este plan:</h3>
+                    <ul>
+                        <li>Traslados: $20-40 por trayecto en transporte público.</li>
+                        <li>Hospedaje: $100-200 por noche en un hotel de gama media.</li>
+                        <li>Entradas a sitios turísticos: $15-30 por persona en promedio.</li>
+                        <li>Comidas: $20-40 por comida en restaurantes locales.</li>
+                        <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
+                    </ul>
+
+                    <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
+            
+            </section>
+
+            <section>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GTgx971O2Ow?si=qi96yOPMPEHTvPcr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+
         </article>
+
         <footer>
-            <b>Sitio Agencia Travel Partner desarrollado por:</b> Salomé Garcés.<br>
-            <b>Contacto:</b> msalome.garces@udea.edu.co
+            <div class="pie">
+                <p>Sitio Agencia TRAVEL PARTNERS desarrollado por: Salomé Garcés.<br>
+                Contacto: msalome.garces@udea.edu.co
+                </p>
+            </div>
         </footer>
+        
     </main>
 </body>
 </html>

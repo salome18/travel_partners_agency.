@@ -5,99 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lima</title>
     <link rel="shortcut icon" href="imagenes/icons8-favicon-48.png">
-
-    <style>
-        main {
-            display: grid;
-            grid-template-areas:
-                "header header"
-                "nav nav"
-                "article article"
-                "footer footer";
-            grid-template-columns: 1fr 2fr;
-        }
-
-        header {
-            text-align: center;
-            font-size: 25px;
-            grid-area: header;
-        }
-
-        nav {
-            font-weight: bold;
-            grid-area: nav;
-        }
-
-        aside {
-            border: 2px solid black;
-            text-align: center;
-            font-weight: bold;
-            grid-area: aside;
-        }
-
-        article {
-            grid-area: article;
-        }
-
-        footer {
-            border: 1px solid rgb(17, 4, 70);
-            background-color: #67d1e914;
-            text-align: center;
-            font-size: 15px;
-            grid-area: footer;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesindex.css">
 </head>
 <body>
     <main>
+
         <header>
-            <h1 style="color: rgb(6, 6, 104)">Lima</h1>
-            <img src="imagenes\Lima.jpg"  height="550px" width="1500px"/>
+            <div class="cabecero">
+             <h1 id="tituloaux">Lima</h1>
+                <img id="imageninicial" src="imagenes\Lima.jpg"/>
+                <nav>
+                    <a id="c_inicio" href="index.html#titulo">Inicio</a>
+                    <a id="c_acercade" href="index.html#acercade">Acerca de</a>
+                    <a id="c_destinos"href="index.html#destinos">Destinos</a>
+                </nav>
+             </div>
         </header>
-        <nav><a href="index.html">Regresar al inicio</a></nav>
+
+        <aside>
+            <nav class="navlateral">
+                <a id="l_costos"href="lima.html#costos">Costos</a>
+                <a id="l_itinerario"href="lima.html#itinerario">Itinerario</a>
+                <a id="l_atractivo" href="lima.html#atractivos">Atractivos</a>
+                <a id="l_descubre" href="lima.html#descubre">Descubre</a>
+               
+             
+            </nav>
+        </aside>
+
+
         <article>
-            <h2 style="color: rgb(6, 6, 104)">Descubre la magia de Lima</h2>
-            <p>Sumérgete en la vibrante mezcla de historia, cultura y gastronomía que ofrece Lima, la capital de Perú.
-                Situada a orillas del océano Pacífico, esta metrópolis cosmopolita te cautivará con su encanto único y sus numerosas facetas.
-                Lima es una ciudad llena de contrastes, donde lo antiguo y lo moderno se entrelazan de manera fascinante. 
-            </p>
-            <h2 style="color: rgb(6, 6, 104)" >Atractivos turísticos:</h2>
-            <ul>
-            <li>Centro Histórico de Lima</li> 
-            <li>Malecón de Miraflores</li> 
-            <li>Barranco: Arte y Bohemia</li> 
-            <li>Playas de la Costa Verde</li> 
-            <li>Parque de las Leyendas</li> 
-            </ul>
+            <section class="aboutus">
+                <h2 id="descubre">Descubre la magia de Lima</h2>
+                <p>Sumérgete en la vibrante mezcla de historia, cultura y gastronomía que ofrece Lima, la cautivadora capital de Perú. Situada majestuosamente a orillas del océano Pacífico, esta metrópolis cosmopolita te invita a descubrir su encanto único y sus múltiples facetas. Lima es una ciudad que rebosa de contrastes, donde lo antiguo y lo moderno se entrelazan de manera fascinante en cada rincón. Desde las majestuosas ruinas precolombinas hasta los relucientes rascacielos, pasando por sus bulliciosos mercados y elegantes bulevares, Lima te ofrece una experiencia inigualable que deleitará tus sentidos y enriquecerá tu espíritu viajero. Déjate seducir por la exquisita cocina peruana, celebra su rica herencia cultural y déjate llevar por la energía vibrante de esta ciudad que nunca deja de sorprender. Lima te espera con los brazos abiertos para ofrecerte una experiencia inolvidable llena de descubrimientos y aventuras.
+                </p>
+            </section>
 
-            
-            <h3 style="color: rgb(6, 6, 104)">Itinerario de 5 días y 4 noches</h3>
-            <ul>
-                <li>Día 1: Tour por el Centro Histórico de Lima y degustación de gastronomía peruana en el Mercado de Surquillo.</li>
-                <li>Día 2: Visita al Museo Larco y paseo por el Parque Kennedy en Miraflores.</li>
-                <li>Día 3: Excursión a la Huaca Pucllana y tarde de relajación en las playas de la Costa Verde.</li>
-                <li>Día 4: Exploración del Barranco bohemio y cena en un restaurante típico.</li>
-                <li>Día 5: Tiempo libre para compras y despedida de Lima.</li>
-            </ul>
-            <h3 style="color: rgb(6, 6, 104)">Costos de este plan:</h3>
-            <ul>
-                <li>Traslados: $10-20 por trayecto en transporte público.</li>
-                <li>Hospedaje: $50-100 por noche en un hotel de gama media.</li>
-                <li>Entradas a sitios turísticos: $15-30 por persona en promedio.</li>
-                <li>Comidas: $10-30 por comida en restaurantes locales.</li>
-                <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
-            </ul>
+           
+            <section class="listas">
+                <h2 id="atractivos">Atractivos turísticos:</h2>
+                
+                <div class="lugares">
+                    <div class="contenedor-img img1">
+                        <img src="imagenes/centrolima.jpg" alt="Lima">
+                        <div class="textos">Centro Histórico de Lima <br>Núcleo cultural de la capital peruana, conocido por su arquitectura colonial y sitios históricos.</div>
+                    </div>
+                    <div class="contenedor-img img2">
+                        <img src="imagenes/malecon.jpg" alt="Lima">
+                        <div class="textos">Malecón de Miraflores <br>El Malecón de Miraflores es un famoso paseo costero en Lima, Perú, con vistas al Océano Pacífico y áreas recreativas.</div>
+                    </div>
+                    <div class="contenedor-img img3">
+                        <img src="imagenes/barranco.jpg" alt="Lima">
+                        <div class="textos">Barranco: Arte y Bohemia <br>Barrio bohemio y artístico de Lima, Perú.</div>
+                    </div>
+                    <div class="contenedor-img img4">
+                        <img src="imagenes/costaverde.jpeg" alt="Lima">
+                        <div class="textos">Playas de la Costa Verde<br> Hermosas playas a lo largo de la costa de Lima, Perú. </div>
+                    </div>
+                    <div class="contenedor-img img5">
+                        <img src="imagenes/parque.jpg" alt="Lima">
+                        <div class="textos">Parque de las Leyendas<br>Zoológico y parque arqueológico en Lima, Perú.</div>
+                    </div>             
+                </div>
+            </section>
 
-            <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
+            <section class="listas"> 
+                <h3 id="itinerario">Itinerario de 5 días y 4 noches</h3>
+                <ul>
+                    <li>Día 1: Tour por el Centro Histórico de Lima y degustación de gastronomía peruana en el Mercado de Surquillo.</li>
+                    <li>Día 2: Visita al Museo Larco y paseo por el Parque Kennedy en Miraflores.</li>
+                    <li>Día 3: Excursión a la Huaca Pucllana y tarde de relajación en las playas de la Costa Verde.</li>
+                    <li>Día 4: Exploración del Barranco bohemio y cena en un restaurante típico.</li>
+                    <li>Día 5: Tiempo libre para compras y despedida de Lima.</li>
+                </ul>
+             </section>
+
+            <section class="listas">
+                <h3 id="costos">Costos de este plan:</h3>
+                <ul>
+                    <li>Traslados: $10-20 por trayecto en transporte público.</li>
+                    <li>Hospedaje: $50-100 por noche en un hotel de gama media.</li>
+                    <li>Entradas a sitios turísticos: $15-30 por persona en promedio.</li>
+                    <li>Comidas: $10-30 por comida en restaurantes locales.</li>
+                    <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
+                </ul>
+
+                <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
+            </section>
 
             <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/J24cDO0n5rg?si=MHzXi19BatKxtlgi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J24cDO0n5rg?si=MHzXi19BatKxtlgi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </section>
+
         </article>
+
         <footer>
-            <b>Sitio Agencia Travel Partner desarrollado por:</b> Salomé Garcés.<br>
-            <b>Contacto:</b> msalome.garces@udea.edu.co
+            <div class="pie">
+                <p>Sitio Agencia TRAVEL PARTNERS desarrollado por: Salomé Garcés.<br>
+                Contacto: msalome.garces@udea.edu.co
+                </p>
+            </div>
         </footer>
+
     </main>
 
 </body>

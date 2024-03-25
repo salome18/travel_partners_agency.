@@ -5,96 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New York</title>
     <link rel="shortcut icon" href="imagenes/icons8-favicon-48.png">
-
-    <style>
-        main {
-            display: grid;
-            grid-template-areas:
-                "header header"
-                "nav nav"
-                "article article"
-                "footer footer";
-            grid-template-columns: 1fr 2fr;
-        }
-
-        header {
-            text-align: center;
-            font-size: 25px;
-            grid-area: header;
-        }
-
-        nav {
-            font-weight: bold;
-            grid-area: nav;
-        }
-
-        aside {
-            border: 2px solid black;
-            text-align: center;
-            font-weight: bold;
-            grid-area: aside;
-        }
-
-        article {
-            grid-area: article;
-        }
-
-        footer {
-            border: 1px solid rgb(17, 4, 70);
-            background-color: #67d1e914;
-            text-align: center;
-            font-size: 15px;
-            grid-area: footer;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesindex.css">
 </head>
 <body>
     <main>
-        <header>
-            <h1 style="color: rgb(6, 6, 104)">New York</h1>
-            <img src="imagenes\NYC.jpg"  height="550px" width="1500px"/>
-        </header>
-        <nav><a href="index.html" >Regresar al inicio</a></nav>
-        <article>
-            <h2 style="color: rgb(6, 6, 104)">Descubre la magia de New York</h2>
-            <p> Bienvenido a la ciudad de Nueva York, un lugar donde la energía vibrante, 
-                la diversidad cultural y la innovación convergen para crear una experiencia urbana inolvidable. 
-                Conocida como la "ciudad que nunca duerme", Nueva York ofrece una mezcla única de arte, historia, 
-                gastronomía y entretenimiento que atrae a millones de visitantes de todo el mundo cada año.
-            <h2 style="color: rgb(6, 6, 104)" >Atractivos turísticos:</h2>
-            <ul>
-            <li>Times Square: Centro neurálgico de la ciudad con luces brillantes, teatros de Broadway y tiendas.</li> 
-            <li>Central Park: Oasis verde en medio de la metrópolis, ideal para pasear, hacer picnic y disfrutar de actividades al aire libre.</li> 
-            <li>Empire State Building: Icono arquitectónico con impresionantes vistas panorámicas de la ciudad desde su mirador.</li> 
-            <li>Estatua de la Libertad y la Isla Ellis: Símbolos emblemáticos de la libertad y la inmigración en Estados Unidos.</li> 
-            <li>Quinta Avenida: Famosa calle comercial con tiendas de lujo y boutiques exclusivas.</li> 
-            </ul>
 
-            <h3 style="color: rgb(6, 6, 104)">Itinerario de 5 días y 4 noches</h3>
-            <ul>
-                <li>Día 1: Exploración de Times Square y Central Park.</li>
-                <li>Día 2: Visita al Museo Metropolitano de Arte y paseo por la Quinta Avenida.</li>
-                <li>Día 3: Excursión al Empire State Building y crucero por el río Hudson.</li>
-                <li>Día 4: Tour por la Estatua de la Libertad y Ellis Island.</li>
-                <li>Día 5: Tiempo libre para compras y despedida de Nueva York.</li>
-            </ul>
-            <h3 style="color: rgb(6, 6, 104)">Costos de este plan:</h3>
-            <ul>
-                <li>Traslados: $20-40 por trayecto en transporte público.</li>
-                <li>Hospedaje: $100-500 por noche en un hotel de gama media.</li>
-                <li>Entradas a sitios turísticos: $15-30 por persona en promedio.</li>
-                <li>Comidas: $20-40 por comida en restaurantes locales.</li>
-                <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
-            </ul>
-            <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Pr5zDVM8lVA?si=6ujHv5vRQr8tZ0jq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <header>
+            <div class="cabecero">
+             <h1 id="tituloaux" >New York</h1>
+                <img id="imageninicial" src="imagenes\NYC.webp"/>
+                <nav>
+                    <a id="c_inicio" href="index.html#titulo">Inicio</a>
+                    <a id="c_acercade" href="index.html#acercade">Acerca de</a>
+                    <a id="c_destinos"href="index.html#destinos">Destinos</a>
+                </nav>
+             </div>
+        </header>
+
+        <aside>
+            <nav class="navlateral">
+                <a id="l_costos"href="ny.html#costos">Costos</a>
+                <a id="l_itinerario"href="ny.html#itinerario">Itinerario</a>
+                <a id="l_atractivo" href="ny.html#atractivos">Atractivos</a>
+                <a id="l_descubre" href="ny.html#descubre">Descubre</a>
+               
+             
+            </nav>
+        </aside>
+
+        <article>
+            <section class="aboutus">
+                <h2 id="descubre">Descubre la magia de New York</h2>
+                <p> Bienvenido a la ciudad de Nueva York, un epicentro donde la energía vibrante, la diversidad cultural y la innovación se fusionan para brindarte una experiencia urbana inolvidable. Conocida como la "ciudad que nunca duerme", Nueva York deslumbra con una mezcla única de arte, historia, gastronomía y entretenimiento que atrae a millones de visitantes de todo el mundo cada año. Desde los rascacielos que perforan el cielo hasta los icónicos puntos de referencia que adornan su horizonte, cada rincón de esta ciudad te invita a sumergirte en su bullicio y a explorar su infinita variedad de experiencias. Descubre los tesoros culturales de sus museos de clase mundial, déjate seducir por la deliciosa diversidad culinaria de sus restaurantes y sumérgete en la vitalidad de sus barrios únicos. En Nueva York, cada calle es una aventura esperando ser descubierta y cada momento es una oportunidad para vivir una nueva e inolvidable experiencia urbana.
+                </p>
+                </section>
+
+
+            <section class="listas">
+                <h2 id="atractivos">Atractivos turísticos:</h2>
+                
+                <div class="lugares">
+                    <div class="contenedor-img img3">
+                        <img src="imagenes/timesquare.jpg" alt="Lima">
+                        <div class="textos">Times Square: <br> Centro neurálgico de la ciudad con luces brillantes, teatros de Broadway y tiendas.</div>
+                    </div>
+                    <div class="contenedor-img img1">
+                        <img src="imagenes/centralpark.jpg" alt="Lima">
+                        <div class="textos">Central Park:<br> Oasis verde en medio de la metrópolis, ideal para pasear, hacer picnic y disfrutar de actividades al aire libre.</div>
+                    </div>
+                    <div class="contenedor-img img2">
+                        <img src="imagenes/empirestate.jpg" alt="Lima">
+                        <div class="textos">Empire State Building:<br> Icono arquitectónico con impresionantes vistas panorámicas de la ciudad desde su mirador.</div>
+                    </div>
+                    <div class="contenedor-img img4">
+                        <img src="imagenes/liberty.jpg" alt="Lima">
+                        <div class="textos">Estatua de la Libertad y la Isla Ellis:<br> Símbolos emblemáticos de la libertad y la inmigración en Estados Unidos.</div>
+                    </div>
+                    <div class="contenedor-img img5">
+                        <img src="imagenes/quintave.jpg" alt="Lima">
+                        <div class="textos">Quinta Avenida:<br> Famosa calle comercial con tiendas de lujo y boutiques exclusivas.</div>
+                    </div>             
+                </div>
             </section>
-            <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>
+
+            <section class="listas">
+                <h3 id="itinerario">Itinerario de 5 días y 4 noches</h3>
+                <ul>
+                    <li>Día 1: Exploración de Times Square y Central Park.</li>
+                    <li>Día 2: Visita al Museo Metropolitano de Arte y paseo por la Quinta Avenida.</li>
+                    <li>Día 3: Excursión al Empire State Building y crucero por el río Hudson.</li>
+                    <li>Día 4: Tour por la Estatua de la Libertad y Ellis Island.</li>
+                    <li>Día 5: Tiempo libre para compras y despedida de Nueva York.</li>
+                </ul>
+            </section>
+
+            <section class="listas">
+                <h3 id="costos">Costos de este plan:</h3>
+                <ul>
+                    <li>Traslados: $20-40 por trayecto en transporte público.</li>
+                    <li>Hospedaje: $100-500 por noche en un hotel de gama media.</li>
+                    <li>Entradas a sitios turísticos: $15-30 por persona en promedio.</li>
+                    <li>Comidas: $20-40 por comida en restaurantes locales.</li>
+                    <li>Transporte local: $2-5 por viaje en metro o autobús.</li>
+                </ul>
+
+                <p> (Estos son solo estimados y pueden variar según la temporada y preferencias individuales).</p>          
+             </section>
+
+            <section>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Pr5zDVM8lVA?si=6ujHv5vRQr8tZ0jq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+
         </article>
+        
         <footer>
-            <b>Sitio Agencia Travel Partner desarrollado por:</b> Salomé Garcés.<br>
-            <b>Contacto:</b> msalome.garces@udea.edu.co
+            <div class="pie">
+                <p>Sitio Agencia TRAVEL PARTNERS desarrollado por: Salomé Garcés.<br>
+                Contacto: msalome.garces@udea.edu.co
+                </p>
+            </div>
         </footer>
+
     </main>
 
 
